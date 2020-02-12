@@ -3,17 +3,32 @@
 <html>
 
     <head>
-        <title>google</title>
+        <title>Boilerplate</title>
         <link rel="stylesheet" href="css/main.css" />
     </head>
 
     <body>
-        <div class="flexbox">
-            <div>&#36;1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+        <audio id="myAudio">
+            <source src="music/tavernMusic.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="container">
+            <h1 id="sceneTitle"></h1>
+            <p id="sceneContent"></p>
+            <input id="charNameInput" placeholder="Enter Your Characters Name" />
+            <div class="btnWrap">
+                <button id="choice1"></button>
+                <button id="choice2"></button>
+            </div>
         </div>
+        <div id="charInfo">
+            <p>Name: <span id="charName"></span></p>
+            <p>Health: <span id="charHealth"></span></p>
+            <p>Damage: <span id="charDamage"></span></p>
+            <p>Armor: <span id="charArmor"></span></p>
+        </div>
+        <script src="js/main.js"></script>
     </body>
 
 </html>
